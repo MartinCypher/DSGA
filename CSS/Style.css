@@ -1,0 +1,794 @@
+@font-face {
+    font-family: "Monserrat" ;
+    src: url("../Fonts/Montserrat-Medium.otf");
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("../Fonts/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: "Sans" ;
+    src: url("../Fonts/OpenSans-Regular.ttf");
+}
+
+
+/* Todo el Index */
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(9,9,121,1) 52%, rgba(0,212,255,1) 79%);
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+
+.TitulodePagina {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border: #0070FF 5px solid;
+    border-radius: 50px;
+    font-size: 40px;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+}
+
+/* Nav Bar Con BS y CSS Personalizado*/
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    border-bottom: #0070FF 5px solid;
+    border-top:  #0070FF 5px solid;
+}
+
+.Logo {
+    cursor: pointer;
+}
+
+.Logo a {
+    font-size: 30px;
+    color: white;
+    font-family: "Raleway" , cursive;
+    transition: all 0.3s;
+}
+
+.Logo a:hover {
+    transform: scale(1.2) ;
+    color: #0070FF;
+}
+
+.Logo img {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.Logo img:hover {
+    transform: scale(1.2);
+}
+
+.Nav-Derecha {
+    justify-content: flex-end;
+}
+
+.Nav-Derecha li {
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.Nav-Derecha li:hover {
+    transform: scale(1.2) ;
+}
+
+.Nav-Derecha a {
+    font-size: 30px;
+    color: white;
+    font-family: "Raleway" , cursive;
+}
+
+.Nav-Derecha li a:hover {
+    color: #0070FF;
+}
+
+/*Comienza el Main*/
+
+main {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+/*Mas Vendidos Carrusel Hecho con BS y CSS Personalizado*/
+
+.TituloMasVendidos{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "Raleway" ,sans-serif;
+    text-align: center;
+    border: #0070FF 5px solid;
+    border-radius: 50px;
+    padding: 10px;
+    grid-area: h2;
+    width: 500px;
+    justify-self: center;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.MasVendidos {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+}
+
+.MasVendidos img {
+    width: auto;
+    height: 500px;
+    transition: all 0.3s ;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.MasVendidos img:hover {
+    transform: scale(1.2);
+}
+
+
+.OfertasPagina {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+    align-items: flex-start;
+    align-content: space-around;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "h2 h2 h2 h2"
+    "RE4 RE4Frame Bayonetta BayonettaFrame";
+}
+
+.OfertasPagina h2 {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "Raleway" ,sans-serif;
+    text-align: center;
+    border: #0070FF 5px solid;
+    border-radius: 40px;
+    padding: 10px;
+    grid-area: h2;
+    width: 800px;
+    align-self: center;
+    justify-self: center;
+}
+
+.OfertasPagina img {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.OfertasPagina iframe {
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.RE4 {
+    grid-area: RE4;
+    justify-self: center;
+    align-self: center;
+}
+
+.RE4Frame {
+    grid-area: RE4Frame;
+    justify-self: center;
+    align-self: center;
+}
+
+.Bayonetta {
+    grid-area: Bayonetta;
+    justify-self: center;
+    align-self: center;
+}
+
+.BayonettaFrame {
+    grid-area: BayonettaFrame;
+    justify-self: center;
+    align-self: center;
+}
+
+.TituloOpiniones {
+    margin-top: 100px;
+    border-top: #0070FF solid 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "Raleway" ,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.TituloOpiniones h2 {
+    margin: 0px;
+}
+
+.Opiniones {
+    background-color: black;
+    border-bottom: #0070FF solid 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.Opiniones p {
+    color: white;
+    font-size: 15px;
+    font-family: "Sans", sans-serif;
+}
+
+.Opiniones h4 {
+    color: white;
+    font-size: 20px;
+    font-family: "Raleway" ,sans-serif;
+    font-weight: bold;
+}
+
+.Opiniones img {
+    width: auto;
+    height: 50px;
+}
+
+.Opiniones1 {
+    margin: 20px 50px;
+    padding: 10px;
+}
+
+
+.Opiniones2 {
+    margin: 20px 50px;
+    padding: 10px;
+}
+
+footer {   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    margin-top: 150px;
+    padding: 40px;
+    border-top: #0070FF solid 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+    font-family: "Sans", sans-serif;
+    text-align: left;
+}
+
+footer h3 {
+    color: white;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+footer h5 {
+    color: white;
+    font-size: 20px ;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    text-align: left;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.QuienesSomos {
+    border: white 3px solid;
+    flex-grow: 1;
+    margin: 10px 100px ;
+    padding: 10px;
+}
+
+.Calidad {
+    flex-grow: 1;
+    margin: 10px 100px;
+    padding: 10px;
+}
+
+
+/* Inicia Catalogos PS5, NintendoSwitch y PC */
+
+.CatalogoPS5 {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+    "h2 h2 h2 h2" 
+    "h6 h6 h6 h6"
+    "PS51 PS52 PS53 PS54"
+    "PS55 PS56 PS57 none";
+
+}
+
+.CatalogoPS5 h2 {
+    width: 500px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 10px;
+    border: #0070FF groove 10px;
+    border-radius: 50px;
+    grid-area: h2;
+    justify-self: center;
+}
+
+.CatalogoPS5 h6 {
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 10px;
+    border: #0070FF groove 10px;
+    border-radius: 50px;
+    grid-area: h6;
+    justify-self: center;
+    align-self: center;
+}
+
+.CatalogoPS5 ul li {
+    color: white;
+    font-size: 15px;
+    font-family: "Sans", cursive;
+    background-color: black;
+    padding: 10px;
+    list-style-type: none;
+    position: relative;
+    right: 40px;
+}
+
+.CatalogoPS5 img {
+    width: auto;
+    height: 400px;
+}
+
+.PS51 {
+    width: 300px;
+    grid-area: PS51;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.PS52 {
+    width: 300px;
+    grid-area: PS52;
+    justify-self: center;
+    align-self: center;
+}
+
+.PS53 {
+    width: 300px;
+    grid-area: PS53;
+    justify-self: center;
+    align-self: center;
+}
+
+.PS54 {
+    width: 300px;
+    grid-area: PS54;
+    justify-self: center;
+    align-self: center;
+}
+
+.PS55 {
+    width: 300px;
+    grid-area: PS55;
+    justify-self: center;
+    align-self: center;
+}
+
+.PS56 {
+    width: 300px;
+    grid-area: PS56;
+    justify-self: center;
+    align-self: center;
+}
+
+.PS57 {
+    width: 300px;
+    grid-area: PS57;
+    justify-self: center;
+    align-self: center;
+}
+
+.CatalogoPC {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 1fr;
+    justify-content: center;
+    align-content: space-around;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-areas: 
+    "h2 h2 h2 h2 h2"
+    "h6 h6 h6 h6 h6"
+    "PC1 PC2 PC3 PC4 PC5";
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.CatalogoPC h2 {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 10px;
+    border: #0070FF groove 10px;
+    border-radius: 50px;
+    grid-area: h2;
+    text-align: center;
+    width: 500px;
+    justify-self: center;
+    align-self: center;
+}
+
+.CatalogoPC h6 {
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    border: #0070FF groove 10px;
+    border-radius: 50px;
+    grid-area: h6;
+    justify-self: center;
+    align-self: center;
+}
+
+.CatalogoPC ul li {
+    color: white;
+    font-size: 15px;
+    font-family: "Sans", sans-serif;
+    background-color: black;
+    padding: 10px;
+    list-style-type: none;
+    position: relative;
+    right: 20px;
+}
+
+.CatalogoPC img {
+    width: auto;
+    height: 400px;
+}
+
+.PC1 {
+    width: 300px;
+    grid-area: PC1;
+    justify-self: center;
+    align-self: center;
+}
+
+.PC2 {
+    width: 300px;
+    grid-area: PC2;
+    justify-self: center;
+    align-self: center;
+}
+
+.PC3 {
+    width: 300px;
+    grid-area: PC3;
+    justify-self: center;
+    align-self: center; 
+}
+
+.PC4 {
+    width: 300px;
+    grid-area: PC4;
+    justify-self: center;
+    align-self: center;
+}
+
+.PC5 {
+    width: 300px;
+    grid-area: PC5;
+    justify-self: center;
+    align-self: center;
+}
+
+/* PREGUNTAS Y TERMINOS */
+
+.PreguntasFrecuentesYTerminos{
+    background-color: black;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 10px;
+    border: #0070FF groove 5px;
+}
+
+.PreguntasFrecuentesYTerminos h2 {
+    color: white;
+    font-size: 70px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.PreguntasFrecuentesYTerminos h3 {
+    color: white;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.PreguntasFrecuentesYTerminos h4 {
+    color: white;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+}
+
+.PreguntasFrecuentesYTerminos p {
+    color: white;
+    font-size: 15px;
+    font-family:  "Sans", sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
+.PreguntasFrecuentesYTerminos ul li {
+    color: white;
+    font-size: 15px;
+    font-family:  "Sans", sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* CONTACTANOS BS y CSS Personalizado */
+
+.ContactanosTitulo {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 10px;
+    border: #0070FF groove 10px;
+    border-radius: 50px;
+}
+
+.FormularioBackGround {
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    padding: 30px;
+    border: #0070FF groove 5px;
+    border-radius: 50px;
+}
+
+
+.Formulario form label {
+    color: white;
+    font-size: 20px;
+    font-family: "Sans", sans-serif;
+    padding: 10px;
+    margin: 20px;
+}
+
+.FormularioInformaciondelcontacto .CajasInput {
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(15,21,148,1) 52%, rgba(0,212,255,1) 79%);
+    padding: 10px;
+    border-radius: 30px;   
+    border: 1px white solid;
+}
+
+.FormularioInformaciondelcontacto .Button {
+    margin: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(15,21,148,1) 52%, rgba(0,212,255,1) 79%);
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family:  "Sans", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    .Logo img {
+        height: 50px;
+        width: auto;
+    }
+    .NavLinks a {
+        font-size: 15px;
+    }
+        
+}
+
+
+/* Titulo de La pagina Queries Celular*/
+
+@media screen and (max-width: 480px) {
+    .TitulodePagina {
+        width: 480px;
+        font-size: 25px;
+}
+}
+
+/* Footer Queries Dispositivo Movil*/
+
+@media screen and (max-width: 480px) {
+    footer {
+        margin-top: 100px;
+        flex-direction: row;
+        gap: 20px;
+    } 
+    footer img {
+        width: auto;
+        height: 30px;
+        margin: 5px 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .QuienesSomos {
+        border: white 3px solid;
+        margin: 20px;
+        width: 220px;
+    }
+    .QuienesSomos p {
+        font-size: 10px;
+    }
+    .QuienesSomos h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Calidad {
+        margin: 20px;
+        width: 220px;
+    }
+    .Calidad p {
+        font-size: 10px;
+    }
+    .Calidad h5 {
+        font-size: 15px;
+        margin: 0px;
+    }
+}
+
+/* Seccion Opiniones. Queries Dispositivo Movil*/
+
+@media screen and (max-width: 480px) {
+    .TituloOpiniones {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 1px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Opiniones {
+        display: flex;
+        flex-direction: column;
+    }
+    .Opiniones p {
+        font-size: 10px;
+    }
+    .Opiniones h4 {
+        font-size: 15px;
+    }
+    .Opiniones img {
+        width: auto;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Opiniones1 {
+        margin: 0px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Opiniones2 {
+        margin: 0px 30px;
+    }
+}
+
+/* Seccion Mas Vendidos Queries Celular*/
+
+@media screen and (max-width: 480px) {
+    .TituloMasVendidos {
+        width: 400px;
+        font-size: 20px;
+    }
+    .MasVendidos img {
+        width: auto;
+        height: 300px;
+    }
+}
+
+/* Seccion Ofertas de Lanzamiento Queries Celular */
+
+@media screen and (max-width: 480px) {
+    .OfertasPagina {
+        width: 480px;
+        display: grid;
+        grid-template-columns: 240px 240px;
+        grid-template-rows: 90px 1fr 1fr;
+        align-items: flex-start;
+        align-content: space-around;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas:
+        "h2 h2"
+        "RE4 RE4Frame"
+        "Bayonetta BayonettaFrame";
+    }
+    .OfertasPagina img {
+        width: 200px;
+        height: 250px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .OfertasPagina iframe {
+        width: 200px;
+        height: 250px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .OfertasPagina h2 {
+        width: 400px;
+        font-size: 20px;
+    }
+
+}
