@@ -15,8 +15,6 @@
 /* Todo el Index */
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 27%, rgba(15,21,148,1) 52%, rgba(0,212,255,1) 79%);
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
@@ -26,7 +24,7 @@ body {
 .TitulodePagina {
     display: flex;
     justify-content: center;
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     font-size: 10px;
     font-family: "Monserrat", sans-serif;
     color: white;
@@ -36,7 +34,7 @@ body {
 /* Nav Bar Con BS y CSS Personalizado*/
 
 header {
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -101,8 +99,9 @@ main {
 
 /*Mas Vendidos Carrusel Hecho con BS y CSS Personalizado*/
 
+
 .TituloMasVendidos{
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     color: white;
     font-size: 25px;
     font-family: "Raleway" ,sans-serif;
@@ -119,6 +118,7 @@ main {
 .MasVendidos {
     margin-top: 50px;
     text-align: center;
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
 }
 
 .MasVendidos img {
@@ -134,6 +134,7 @@ main {
 }
 
 .OfertasPagina {
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     width: 100%;
     margin-top: 50px;
     display: grid;
@@ -149,7 +150,7 @@ main {
 }
 
 .OfertasPagina h2 {
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     color: white;
     font-size: 30px;
     font-family: "Raleway" ,sans-serif;
@@ -165,11 +166,13 @@ main {
 .OfertasPagina img {
     width: 400px;
     height: 400px;
+    border-radius: 10px;
 }
 
 .OfertasPagina iframe {
     width: 400px;
     height: 400px;
+    border-radius: 10px;
 }
 
 .RE4 {
@@ -198,22 +201,22 @@ main {
 
 .TituloOpiniones {
     margin-top: 100px;
-    border-top: #0070FF solid 5px;
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     color: white;
     font-size: 30px;
     font-family: "Raleway" ,sans-serif;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .TituloOpiniones h2 {
-    margin: 0px;
+    margin: 10px;
 }
 
 .Opiniones {
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
-    border-bottom: #0070FF solid 5px;
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     display: flex;
     flex-direction: row;
     align-content: flex-start;
@@ -254,10 +257,10 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
     margin-top: 150px;
     padding: 40px;
-    border-top: #0070FF solid 5px;
+    border-top: darkblue solid 5px;
 }
 
 footer p {
