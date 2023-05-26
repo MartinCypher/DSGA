@@ -327,7 +327,7 @@ footer img {
 }
 
 
-/* Inicia Catalogos PS5, NintendoSwitch y PC */
+/* Inicia Catalogos PS5 y NintendoSwitch*/
 
 .TituloPS5 {
     display: flex;
@@ -348,8 +348,8 @@ footer img {
 }
 
 .CatalogoPS5 {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -429,36 +429,21 @@ footer img {
     align-self: center;
 }
 
+
+/*Catalogo PC*/
+
 .CatalogoPC {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px 150px 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-content: space-around;
     column-gap: 10px;
     row-gap: 20px;
     grid-template-areas: 
-    "h2 h2 h2 h2 h2"
-    "h6 h6 h6 h6 h6"
     "PC1 PC2 PC3 PC4 PC5";
     margin-top: 100px;
-    margin-bottom: 150px;
-}
-
-.CatalogoPC h2 {
-    background-color: black;
-    color: white;
-    font-size: 40px;
-    font-family: "Raleway", sans-serif;
-    text-align: center;
-    padding: 10px;
-    border: #0070FF groove 10px;
-    border-radius: 50px;
-    grid-area: h2;
-    text-align: center;
-    width: 500px;
-    justify-self: center;
-    align-self: center;
+    margin-bottom: 100px;
 }
 
 .CatalogoPC h6 {
@@ -531,14 +516,14 @@ footer img {
 .PreguntasFrecuentesYTerminos{
     background-color: black;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     padding: 10px;
-    border: #0070FF groove 5px;
+    border: darkblue solid 5px;
 }
 
 .PreguntasFrecuentesYTerminos h2 {
     color: white;
-    font-size: 70px;
+    font-size: 50px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -548,7 +533,7 @@ footer img {
 
 .PreguntasFrecuentesYTerminos h3 {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     text-align: center;
@@ -587,18 +572,21 @@ footer img {
 /* CONTACTANOS BS y CSS Personalizado */
 
 .ContactanosTitulo {
-    background-color: black;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 30px;
-    width: 500px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-family: "Raleway" ,sans-serif;
     text-align: center;
     padding: 10px;
-    border: #0070FF groove 10px;
-    border-radius: 50px;
+    justify-self: center;
+    margin-top: 100px;
+}
+
+.ContactanosTitulo h2 {
+    margin: 20px;
 }
 
 .FormularioBackGround {
@@ -606,7 +594,7 @@ footer img {
     background-color: black;
     margin: auto;
     padding: 30px;
-    border: #0070FF groove 5px;
+    border: darkblue solid 5px;
     border-radius: 50px;
 }
 
@@ -641,9 +629,9 @@ footer img {
 
 @media screen and (max-width: 480px) {
     .TitulodePagina {
-        width: 480px;
+        width: 100%;
         font-size: 15px;
-}
+    }
 }
 
 /* Footer Queries Dispositivo Movil*/
@@ -769,9 +757,11 @@ footer img {
     }
 
 }
-/*Catalogo PS5 Media Queries*/
+/*Catalogo PS5 y NS Media Queries Celular*/
+
 @media screen and (max-width: 480px) {
     .CatalogoPS5 {
+        width: 100%;
         display: flex;
         flex-direction: column;
         }
@@ -781,4 +771,16 @@ footer img {
         margin: 5px;
     }
 
+}
+@media screen and (max-width: 480px) {
+    .CatalogoPC {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .CatalogoPC img {
+        width: auto;
+        height: 400px;
+        margin: 5px;
+    }
 }
