@@ -1,0 +1,50 @@
+/* Cree los mixins aca por que no me tomaba los import de "un archivo externo _mixins"*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
+  margin-top: 150px;
+  padding: 40px;
+  border-top: darkblue solid 5px;
+}
+footer p {
+  color: white;
+  font-size: 15px;
+  font-family: "Sans", sans-serif;
+  text-align: left;
+}
+footer h3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+footer h5 {
+  color: white;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  text-align: left;
+}
+footer img {
+  height: 50px;
+  width: 50px;
+}
+
+.QuienesSomos {
+  border: white 3px solid;
+  flex-grow: 1;
+  margin: 10px 100px;
+  padding: 10px;
+}
+
+.Calidad {
+  flex-grow: 1;
+  margin: 10px 100px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

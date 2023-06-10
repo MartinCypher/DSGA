@@ -272,59 +272,9 @@ main {
     padding: 10px;
 }
 
-/*Empieza el Footer Hecho con Flex*/
+/*El footer esta hecho con sass*/
 
-footer {   
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    background: linear-gradient(180deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
-    margin-top: 150px;
-    padding: 40px;
-    border-top: darkblue solid 5px;
-}
 
-footer p {
-    color: white;
-    font-size: 15px;
-    font-family: "Sans", sans-serif;
-    text-align: left;
-}
-
-footer h3 {
-    color: white;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-}
-
-footer h5 {
-    color: white;
-    font-size: 20px ;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    margin: 10px;
-    text-align: left;
-}
-
-footer img {
-    height: 50px;
-    width: 50px;
-}
-
-.QuienesSomos {
-    border: white 3px solid;
-    flex-grow: 1;
-    margin: 10px 100px ;
-    padding: 10px;
-}
-
-.Calidad {
-    flex-grow: 1;
-    margin: 10px 100px;
-    padding: 10px;
-}
 
 
 /* Inicia Catalogos PS5 y NintendoSwitch*/
@@ -372,19 +322,20 @@ footer img {
     list-style-type: none;
     position: relative;
     right: 40px;
+    
 }
 
 .CatalogoPS5 img {
     width: auto;
     height: 400px;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .PS51 {
     width: 300px;
     grid-area: PS51;
     justify-self: center;
-    align-self: center;
-    
+    align-self: center;   
 }
 
 .PS52 {
@@ -429,6 +380,15 @@ footer img {
     align-self: center;
 }
 
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
 
 /*Catalogo PC*/
 
@@ -474,6 +434,7 @@ footer img {
 .CatalogoPC img {
     width: auto;
     height: 400px;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .PC1 {
