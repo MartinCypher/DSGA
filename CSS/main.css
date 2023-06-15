@@ -47,4 +47,40 @@ footer img {
   padding: 10px;
 }
 
+/*Media queries Mobile Desing Footer*/
+@media screen and (max-width: 480px) {
+  footer {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer img {
+    width: auto;
+    height: 30px;
+    margin: 5px 0px;
+  }
+  .QuienesSomos {
+    border: white 3px solid;
+    margin: 20px;
+    width: 220px;
+  }
+  .QuienesSomos p {
+    font-size: 10px;
+  }
+  .QuienesSomos h3 {
+    font-size: 15px;
+  }
+  .Calidad {
+    margin: 20px;
+    width: 220px;
+  }
+  .Calidad p {
+    font-size: 10px;
+  }
+  .Calidad h5 {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
