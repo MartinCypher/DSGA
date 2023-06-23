@@ -380,6 +380,46 @@ main {
     align-self: center;
 }
 
+.BotonCarrito {
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.BotonCarrito::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+    45deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
 @keyframes fade-in {
     0% {
       opacity: 0;
@@ -565,25 +605,6 @@ main {
     font-family: "Sans", sans-serif;
     padding: 10px;
     margin: 20px;
-}
-
-.FormularioInformaciondelcontacto .CajasInput {
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(15,21,148,1) 52%, rgba(0,212,255,1) 79%);
-    padding: 10px;
-    border-radius: 30px;   
-    border: 1px white solid;
-}
-
-.FormularioInformaciondelcontacto .Button {
-    margin: 30px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 30%, rgba(15,21,148,1) 52%, rgba(0,212,255,1) 79%);
-    font-size: 20px;
-    border-radius: 10px;
-    color: white;
-    font-family:  "Sans", sans-serif;
 }
 
 /* Titulo de La pagina Queries Celular*/
