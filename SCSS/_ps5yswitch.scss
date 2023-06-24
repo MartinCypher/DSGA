@@ -1,0 +1,141 @@
+.TituloPS5 {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	color: $color_p;
+	font-size: 25px;
+	font-family: $font-h;
+	text-align: center;
+	padding: 10px;
+	justify-self: center;
+	margin-top: 100px;
+	h2 {
+		margin: 20px;
+	}
+}
+.CatalogoPS5 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
+	justify-content: space-around;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-areas: "PS51 PS52 PS53 PS54" "PS55 PS56 PS57 none";
+	ul {
+		li {
+			color: $color_p;
+			font-size: 15px;
+			font-family: $font-p;
+			background-color: $color-backblack;
+			padding: 10px;
+			list-style-type: none;
+			position: relative;
+			right: 40px;
+		}
+	}
+	img {
+		width: auto;
+		height: 400px;
+		animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+}
+.PS51 {
+	width: 300px;
+	grid-area: PS51;
+    @include grid-propja
+}
+.PS52 {
+	width: 300px;
+	grid-area: PS52;
+    @include grid-propja
+}
+.PS53 {
+	width: 300px;
+	grid-area: PS53;
+    @include grid-propja
+}
+.PS54 {
+	width: 300px;
+	grid-area: PS54;
+    @include grid-propja
+}
+.PS55 {
+	width: 300px;
+	grid-area: PS55;
+    @include grid-propja
+}
+.PS56 {
+	width: 300px;
+	grid-area: PS56;
+    @include grid-propja
+}
+.PS57 {
+	width: 300px;
+	grid-area: PS57;
+    @include grid-propja
+}
+.BotonCarrito {
+	background-color: $color-backblack;
+	cursor: pointer;
+	border: none;
+	padding: 16px 32px;
+	color: $color_p;
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+}
+.BotonCarrito::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+    45deg, #000000, #0e0419, #14082b, #150b3d, #140b51, #0f0b65, #01097a);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	.CatalogoPS5 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		img {
+			width: auto;
+			height: 400px;
+			margin: 5px;
+		}
+	}
+}

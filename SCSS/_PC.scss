@@ -1,0 +1,80 @@
+.CatalogoPC {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	justify-content: center;
+	align-content: space-around;
+	column-gap: 10px;
+	row-gap: 20px;
+	grid-template-areas: "PC1 PC2 PC3 PC4 PC5";
+	margin-top: 100px;
+	margin-bottom: 100px;
+	h6 {
+		width: 300px;
+		background-color: $color-backblack;
+		color: $color_p;
+		font-size: 30px;
+		font-family: $font-h;
+		text-align: center;
+		border: #0070FF groove 10px;
+		border-radius: 50px;
+		grid-area: h6;
+		justify-self: center;
+		align-self: center;
+	}
+	ul {
+		li {
+			color: $color_p;
+			font-size: 15px;
+			font-family: $font-p;
+			background-color: $color-backblack;
+			padding: 10px;
+			list-style-type: none;
+			position: relative;
+			right: 20px;
+		}
+	}
+	img {
+		width: auto;
+		height: 400px;
+		animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+}
+.PC1 {
+	width: 300px;
+	grid-area: PC1;
+    @include grid-propja
+}
+.PC2 {
+	width: 300px;
+	grid-area: PC2;
+    @include grid-propja
+}
+.PC3 {
+	width: 300px;
+	grid-area: PC3;
+    @include grid-propja
+}
+.PC4 {
+	width: 300px;
+	grid-area: PC4;
+    @include grid-propja
+}
+.PC5 {
+	width: 300px;
+	grid-area: PC5;
+    @include grid-propja
+}
+
+@media screen and (max-width: 480px) {
+	.CatalogoPC {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		img {
+			width: auto;
+			height: 400px;
+			margin: 5px;
+		}
+	}
+}

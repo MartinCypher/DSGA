@@ -1,0 +1,52 @@
+.PreguntasFrecuentesYTerminos {
+	background-color: $color-backblack;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 10px;
+	border: darkblue solid 5px;
+	h2 {
+		color: $color_p;
+		font-size: 50px;
+		font-family: $font-h;
+		font-weight: bold;
+		text-align: center;
+		padding: 10px;
+		margin: 20px;
+	}
+	h3 {
+		color: $color_p;
+		font-size: 40px;
+		font-family: $font-h;
+		font-weight: bold;
+		text-align: center;
+		padding: 10px;
+		margin: 20px;
+	}
+	h4 {
+		color: $color_p;
+		font-size: 25px;
+		font-family: $font-h;
+		font-weight: bold;
+		text-align: left;
+		padding: 10px;
+		margin: 20px;
+	}
+	p {
+		color: $color_p;
+		font-size: 15px;
+		font-family: $font-p;
+		font-weight: bold;
+		padding: 10px;
+		margin: 20px;
+	}
+	ul {
+		li {
+			color: $color_p;
+			font-size: 15px;
+			font-family: $font-p;
+			font-weight: bold;
+			padding: 10px;
+			margin: 20px;
+		}
+	}
+}

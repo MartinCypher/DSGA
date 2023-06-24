@@ -1,0 +1,35 @@
+.ContactanosTitulo {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	color: $color_p;
+	font-size: 25px;
+	font-family: $font-h;
+	text-align: center;
+	padding: 10px;
+	justify-self: center;
+	margin-top: 100px;
+	h2 {
+		margin: 20px;
+	}
+}
+.FormularioBackGround {
+	width: 100%;
+	background-color: $color-backblack;
+	margin: auto;
+	padding: 30px;
+	border: darkblue solid 5px;
+	border-radius: 50px;
+}
+.Formulario {
+	form {
+		label {
+			color: $color_p;
+			font-size: 20px;
+			font-family: $font-p;
+			padding: 10px;
+			margin: 20px;
+		}
+	}
+}
